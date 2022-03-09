@@ -1,13 +1,15 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import {MatTableModule} from '@angular/material/table';
-import {MatButtonModule} from '@angular/material/button';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatSortModule} from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSortModule } from '@angular/material/sort';
+import { MatSelectModule } from '@angular/material/select';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
 
 import { BrowserModule } from '@angular/platform-browser';
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +19,20 @@ import { ConfirmDialogComponent } from './components/continente/confirm-dialog/c
 import { ContinenteModalComponent } from './components/continente/continente-modal/continente-modal.component';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
-import {MatPaginatorIntl, MatPaginatorModule} from '@angular/material/paginator';
+import {
+  MatPaginatorIntl,
+  MatPaginatorModule,
+} from '@angular/material/paginator';
+import { HabitanteComponent } from './components/habitante/habitante.component';
+import { HabitanteModalComponent } from './components/habitante/habitante-modal/habitante-modal.component';
+import { PaisComponent } from './components/pais/pais.component';
+import { PaisModalComponent } from './components/pais/pais-modal/pais-modal.component';
+import { CabeceraComponent } from './components/cabecera/cabecera.component';
+import { PieComponent } from './components/pie/pie.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+
 //import { MatPaginatorEsp } from './resource/mat-paginator';
 //import {Promise} from 'es6-promise'
 
@@ -28,7 +43,14 @@ import {MatPaginatorIntl, MatPaginatorModule} from '@angular/material/paginator'
     AppComponent,
     ContinenteComponent,
     ConfirmDialogComponent,
-    ContinenteModalComponent
+    ContinenteModalComponent,
+    HabitanteComponent,
+    HabitanteModalComponent,
+    PaisComponent,
+    PaisModalComponent,
+    CabeceraComponent,
+    PieComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,10 +64,15 @@ import {MatPaginatorIntl, MatPaginatorModule} from '@angular/material/paginator'
     FormsModule,
     MatInputModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatToolbarModule,
+    MatSelectModule,
+    MatIconModule,
+    MatGridListModule,
+
     //Promise
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  exports: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

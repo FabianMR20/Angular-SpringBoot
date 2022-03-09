@@ -1,0 +1,48 @@
+
+<mat-form-field appearance="fill">
+  <mat-label>Usuario</mat-label>
+  <input matInput placeholder="Usuario" [(ngModel)]="habitante.usuario" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>Contraseña</mat-label>
+  <input matInput placeholder="Contraseña" [(ngModel)]="habitante.contrasenna" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>Nombre</mat-label>
+  <input matInput placeholder="Nombre" [(ngModel)]="habitante.nombre" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>Apellido</mat-label>
+  <input matInput placeholder="Apellido" [(ngModel)]="habitante.apellidos" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>Fecha Nacimiento</mat-label>
+  <input matInput placeholder="Fecha Nacimiento" [(ngModel)]="habitante.fechanac" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>Telefono</mat-label>
+  <input matInput placeholder="Telefono" [(ngModel)]="habitante.telefono" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label *ngIf="habitante.pais">{{ habitante.pais.nombrepais }}</mat-label>
+  <mat-select matInput placeholder="Seleccione un Continente" [(ngModel)]="habitante.pais">
+    <mat-option matInput *ngFor="let p of pais" [value]="p"
+      >{{ p.nombrepais }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<div class="example-container">
+  <button mat-button color="primary" (click)="aceptar()">
+    <span class="material-icons">save</span>
+  </button>
+  <button mat-button color="primary" (click)="cancelar()">
+    <span class="material-icons">cancel</span>
+  </button>
+</div>

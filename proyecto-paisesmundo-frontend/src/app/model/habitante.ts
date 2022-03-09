@@ -3,10 +3,10 @@ import { Pais } from './pais';
 export class Habitante {
   idhabitante: number;
   usuario: string;
-  contraseña: string;
-  fechanac: string;
+  contrasenna: string;
+  fechanac: Date;
   nombre: string;
-  apellido: string;
+  apellidos: string;
   telefono: string;
-  idpais: Pais;
+  pais: Pais;
 }

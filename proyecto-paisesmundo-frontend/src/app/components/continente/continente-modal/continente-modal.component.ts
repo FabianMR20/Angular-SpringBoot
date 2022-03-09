@@ -33,6 +33,7 @@ export class ContinenteModalComponent implements OnInit {
           this.continenteService.continenteActualizar.next(data);
         });
       });
+      this.cancelar();
     } else {
 
       this.continenteService.registrar(this.continente).subscribe(() => {
@@ -41,7 +42,6 @@ export class ContinenteModalComponent implements OnInit {
         });
       });
     }
-    this.cancelar();
   }
 
   cancelar() {

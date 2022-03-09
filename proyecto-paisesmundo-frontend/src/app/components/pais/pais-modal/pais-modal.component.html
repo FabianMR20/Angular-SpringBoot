@@ -1,0 +1,42 @@
+<mat-form-field appearance="fill">
+  <mat-label>Nombre</mat-label>
+  <input matInput placeholder="Nombre" [(ngModel)]="pais.nombrepais" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>Capital</mat-label>
+  <input matInput placeholder="Capital" [(ngModel)]="pais.capitalpais" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>Codigo Telefonico</mat-label>
+  <input matInput placeholder="Codigo Telefonico" [(ngModel)]="pais.codTel" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>ISO2</mat-label>
+  <input matInput placeholder="ISO2" [(ngModel)]="pais.iso2" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>ISO3</mat-label>
+  <input matInput placeholder="ISO3" [(ngModel)]="pais.iso3" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label *ngIf="pais.continente" >{{ pais.continente.nombre }}</mat-label>
+  <mat-select matInput placeholder="Seleccione un Continente" [(ngModel)]="pais.continente">
+    <mat-option matInput *ngFor="let c of continente" [value]="c"
+      >{{ c.nombre }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<div class="example-container">
+  <button mat-button color="primary" (click)="aceptar()">
+    <span class="material-icons">save</span>
+  </button>
+  <button mat-button color="primary" (click)="cancelar()">
+    <span class="material-icons">cancel</span>
+  </button>
+</div>

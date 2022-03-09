@@ -2,12 +2,11 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { Continente } from './../../model/continente';
 import { ContinenteModalComponent } from './continente-modal/continente-modal.component';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
-
-import { ContinenteService } from './../../service/continente.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSort } from '@angular/material/sort';
+import { ContinenteService } from 'src/app/service/continente.service';
 
 @Component({
   selector: 'app-continente',
