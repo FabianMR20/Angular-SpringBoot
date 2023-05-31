@@ -11,20 +11,20 @@ INSERT INTO `paisesmundo`.`continente`(`idcontinente`,`nombre`) VALUES(1,"Améri
 -- -----------------------------------------------------
 
 
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Australia','Australia','Australie','Camberra','61','AU','AUS',1);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Nueva Zelanda','New Zealand','Nouvelle-Zélande','Wellington','64','NZ','NZL',2);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Papúa Nueva Guinea','Papua New Guinea','Papouasie-Nouvelle-Guinée','Port Moresby','675','PG','PNG',3);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Fiyi','Fiji','Fidji','Suva','679','FJ','FJI',4);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Islas Marshall','Marshall Islands','Iles Marshall','Majuro','692','MH','MHL',5);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Islas Salomón','Solomon Islands','Iles Salomon','Honiara','677','SB','SLB',6);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Kiribati','Kiribati','Kiribati','Tarawa','686','KI','KIR',7);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Tonga','Tonga','Tonga','Nuku''alofa','676','TO','TON',8);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Samoa','Samoa','Samoa','Apia','685','WS','WSM',9);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Tuvalu','Tuvalu','Tuvalu','Funafuti','688','TV','TUV',10);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Vanuatu','Vanuatu','Vanuatu','Port Vila','678','VU','VUT',11);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Micronesia','Micronesia','Micronesia','Palikir','691','FM','FSM',12);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Nauru','Nauru','Nauru','Yaren','674','NR','NRU',13);
-INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Palau','Palau','Palau','Melekeok','680','PW','PLW',14);
+INSERT INTO `pais`(`idpais`, `nombrepais`, `capitalpais`, `cod_tel`, `iso2`, `iso3`, `idcontinente`) VALUES (1,'Australia','Camberra','61','AU','AUS',1);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Nueva Zelanda','New Zealand','Nouvelle-Zélande','Wellington','64','NZ','NZL',2);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Papúa Nueva Guinea','Papua New Guinea','Papouasie-Nouvelle-Guinée','Port Moresby','675','PG','PNG',3);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Fiyi','Fiji','Fidji','Suva','679','FJ','FJI',4);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Islas Marshall','Marshall Islands','Iles Marshall','Majuro','692','MH','MHL',5);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Islas Salomón','Solomon Islands','Iles Salomon','Honiara','677','SB','SLB',6);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Kiribati','Kiribati','Kiribati','Tarawa','686','KI','KIR',7);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Tonga','Tonga','Tonga','Nuku''alofa','676','TO','TON',8);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Samoa','Samoa','Samoa','Apia','685','WS','WSM',9);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Tuvalu','Tuvalu','Tuvalu','Funafuti','688','TV','TUV',10);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Vanuatu','Vanuatu','Vanuatu','Port Vila','678','VU','VUT',11);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Micronesia','Micronesia','Micronesia','Palikir','691','FM','FSM',12);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Nauru','Nauru','Nauru','Yaren','674','NR','NRU',13);
+-- INSERT INTO Oceania(nombre,name,nom,cap,phone_code,i2,i3,id) VALUES ('Palau','Palau','Palau','Melekeok','680','PW','PLW',14);
 
 
 -- -----------------------------------------------------

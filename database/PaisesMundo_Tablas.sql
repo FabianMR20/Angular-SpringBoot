@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `paisesmundo`.`continente` (
   PRIMARY KEY (`idcontinente`))
 ENGINE = InnoDB;
 
-CREATE INDEX `fk_pais_continente1_idx` ON `paisesmundo`.`continente` (`nombre` ASC) VISIBLE;
+-- CREATE INDEX `fk_pais_continente1_idx` ON `paisesmundo`.`continente` (`nombre` ASC) VISIBLE;
 
 -- -----------------------------------------------------
 -- Table `paisesmundo`.`pais`
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `paisesmundo`.`pais` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-CREATE INDEX `fk_habitante_pais1_idx` ON `paisesmundo`.`pais` (`nombrepais` ASC) VISIBLE;
+-- CREATE INDEX `fk_habitante_pais1_idx` ON `paisesmundo`.`pais` (`nombrepais` ASC) VISIBLE;
 
 -- -----------------------------------------------------
 -- Table `paisesmundo`.`habitante`
